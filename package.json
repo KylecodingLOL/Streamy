@@ -9,7 +9,7 @@
     "start": "electron ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Kyle Wayland",
   "license": "ISC",
   "devDependencies": {
     "electron": "^26.2.2",
