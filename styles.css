@@ -1,0 +1,82 @@
+
+.header button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+  
+
+body {
+    background-color: black;
+}
+
+/* Style for inline elements */
+.inline-element {
+    cursor: pointer; 
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; /* Align icons to the left */
+}
+
+/* Style for the header */
+.header {
+    background-color: black;
+    font-size: 1px;
+}
+
+/* Style for images within buttons */
+.inline-element img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Styles for dropdown */
+.dropdown {
+    padding-bottom: 5px;
+    color: white;
+    position: relative;
+    display: block;
+    margin-bottom: 330px;
+}
+
+.dropdown-content {
+
+    position: absolute;
+    left: 0; /* Align dropdown to the left */
+    background-color: black;
+    z-index: 1;
+}
+
+.dropdown-content .inline-element {
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Makes the "Streaming" label white */
+.dropdown:first-child .dropbtn {
+    color: white;
+}
+
+.dropdown:last-child .dropbtn {
+    
+    padding-top: 5px;
+    margin-left: 9px;
+    color: white;
+}
+
+
+
+.streaming-content {
+    
+    top: 100%;
+    left: 0;
+  }
+  
+  .social-content {
+    top: 100%;
+    left: 0;
+  }
+  
