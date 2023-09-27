@@ -7,7 +7,7 @@ Streamy is a streaming app that allows you to quickly access various streaming a
 
 ## Installation
 
-1. Download the installer from [].
+1. Download the installer from [https://github.com/KylecodingLOL/Streamy/releases/download/Streamy/Streamy.exe].
 2. Run the installer.
 
 ## Usage
