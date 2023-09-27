@@ -6,13 +6,12 @@ let mainWindow = null;
 let popoutWindow = null;
 
 let lastUpdateTime = 0;
-const throttleTime = 1;  // milliseconds
-
+const throttleTime = 1;  
 function createWindow() {
     mainWindow = new BrowserWindow({
       width: 940,
       height: 600,
-      minWidth: 940, // minimum width
+      minWidth: 940, 
       minHeight: 640,
       resizable: true,
       webPreferences: {
@@ -26,7 +25,7 @@ function createWindow() {
     popoutWindow = new BrowserWindow({
       width: 800,
       height: 540,
-      minWidth: 800, // minimum width
+      minWidth: 800, 
       minHeight: 540,
       parent: mainWindow,
       movable: false
@@ -53,8 +52,8 @@ function updatePopoutWindow() {
   
     const [width, height] = mainWindow.getSize();
   
-    // Use a different height ratio if the main window is fullscreen
-    const popoutHeightRatio = mainWindow.isFullScreen() ? 0.88 : 0.88;  // Change these ratios as needed
+
+    const popoutHeightRatio = mainWindow.isFullScreen() ? 0.88 : 0.88;  
   
     const newPopoutHeight = Math.floor(height * popoutHeightRatio);
     const padding = 20;
@@ -63,7 +62,7 @@ function updatePopoutWindow() {
     
     const [x, y] = mainWindow.getPosition();
     
-    // If you don't want to move the popout window vertically, keep its y-coordinate fixed
+  
     popoutWindow.setPosition(x + 80, y + height - newPopoutHeight - padding);
   }
   
